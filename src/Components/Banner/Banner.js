@@ -5,7 +5,7 @@ function Banner() {
     return (
         <div className='banner'>
             <div className='content'>
-                <h1 className='title'>Title</h1>
+                <h1 className='title'>Movie Name</h1>
                 <div className='banner-buttons'>
                     <button className='banner-btn'>Play</button>
                     <button className='banner-btn'>My List</button>

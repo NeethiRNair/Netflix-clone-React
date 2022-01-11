@@ -18,4 +18,6 @@
     position: fixed;
     width: 30px;
     right: 20px;
+    top: 18px;
+    border-radius: 2px;
 }
