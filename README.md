@@ -1,6 +1,7 @@
 ## Netflix Clone React
-This is Netflix clone application done using React.js. 
-The movie details are from 'https://api.themoviedb.org/3'. Api call is used to get latest movies and its description. 
+This is Netflix clone application done using React.js.\
+The movie details are from 'https://api.themoviedb.org/3'. Api call is used to get latest movies and 
+its description.\
 'react-youtube' npm is used to play the movie trailer from Youtube.
 
 ## Available Scripts
