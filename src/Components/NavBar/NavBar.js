@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './NavBar.css'
+
 function NavBar() {
+    const navigate = useNavigate(); 
     return (
         <div className='navbar'>
             {/* <div className='logo-div'> */}
@@ -8,11 +11,11 @@ function NavBar() {
             {/* </div> */}
             <div className='nav-div'>    
                 <ul className='nav-list'>
-                    <li className='nav-item'><a className="active" href="">Home</a></li>
-                    <li className='nav-item'><a  href="#news">Tv Shows</a></li>
-                    <li className='nav-item'><a  href="#contact">Movies</a></li>
-                    <li className='nav-item'><a  href="#about">Recently Added</a></li>
-                    <li className='nav-item'><a  href="#about">My List</a></li>
+                    <li className='nav-item' onClick={()=> navigate('/')}><span className="active" >Home</span></li>
+                    <li className='nav-item'><span  onClick={()=> navigate('/movies')}>Movies</span></li>
+                    <li className='nav-item'><span  href="">Tv Shows</span></li>
+                    <li className='nav-item'><span  href="">Recently Added</span></li>
+                    <li className='nav-item'><span  href="">My List</span></li>
                 </ul>
             </div>
             

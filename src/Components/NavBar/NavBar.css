@@ -44,15 +44,16 @@
     float: left;
 }
   
-.nav-item a {
+.nav-item span {
     display: block;
     color: rgb(238, 238, 238);
     text-align: center;
     padding: 4px 16px;
     text-decoration: none;
+    cursor: pointer;
 }
   
-.nav-item a:hover {
+.nav-item span:hover {
     background-color: rgb(36, 36, 36);
     border-radius: 5px;
 }
