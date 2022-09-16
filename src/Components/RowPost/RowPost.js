@@ -8,6 +8,7 @@ function RowPost(props) {
     const [movies, setMovies] = useState([]);
     const [movieUrlId, setMovieUrlId] = useState('');
     useEffect(() => {
+        console.log(props.url)
         axios.get(`${props.url}`)
         .then((response) => {
             setMovies(response.data.results);
@@ -25,7 +26,6 @@ function RowPost(props) {
         },
     };
     const handleMovie = (movieId) => {
-        console.log(movieId)
         axios.get(`movie/${movieId}/videos?api_key=${API_KEY}&language=en-US`)
         .then((response)=> {
             if(response.data.results.length!==0) {
